@@ -10,6 +10,8 @@ export const Container = styled.div`
   padding: 40px 0;
   height: 200vh;
   background-color: #11172B;
+  width: 100%;
+  overflow: hidden;
 `
 
 export const Wrapper = styled.div`
@@ -19,6 +21,7 @@ export const Wrapper = styled.div`
   flex-wrap: wrap ;
   margin: 0 auto;
   padding: 0px 10px;
+  width: 100%;
 
 `
 export const ProjectsTitle = styled.h1`

@@ -17,6 +17,9 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   justify-content: center;
+  overflow: hidden;
+ 
+ 
 `
 
 export const Wrapper = styled.div`
@@ -24,15 +27,18 @@ export const Wrapper = styled.div`
   max-width: 1200px;
   flex-wrap: wrap ;
   margin: 0 auto;
+  
 
   @media screen and (max-width: 1000px) {
     flex-wrap: wrap-reverse;
+    
   }
   /* padding: 10px 20px; */
 `
 
 export const TextContainer = styled.div`
   display: flex;
+  
   
   justify-content: center;
   flex-direction: column;
@@ -45,6 +51,8 @@ export const AnimationContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1 1 500px;
+  position: relative;
+  /* border: 1px solid red; */
   
   @media screen and (max-width: 1000px) {
     
@@ -56,7 +64,7 @@ export const TextWrapper = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  
   @media screen and (max-width: 1000px) {
     position: absolute;
     z-index: 24;
@@ -152,6 +160,12 @@ export const Rectangle = styled.div`
      position: absolute;
      z-index: 1;
      border-radius: 50%;
+     
+     @media screen and (max-width: 465px){
+       width: 350px;
+       height: 350px;
+     }
+     
 `
 
 

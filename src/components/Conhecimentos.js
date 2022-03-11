@@ -9,14 +9,15 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 export const Container = styled.div`
-  padding: 40px 0;
-  height: 80vh;
-  background-color: #11172B;
+  padding: 40px 10px;
 
+  background-color: #11172B;
+  /* border: 4px solid green; */
+  width: 100%;
 `
 
 export const Wrapper = styled.div`
-  
+  /* border: 4px solid green; */
   display: flex;
   max-width: 1200px;
   flex-wrap: wrap ;
@@ -27,11 +28,18 @@ export const Wrapper = styled.div`
 `
 
 export const ConhecimentosTitle = styled.h1`
+   
+    color: #0EE7B7;
+    margin-bottom: 40px;
     font-size: 5rem;
     font-weight: 600;
     color: #0EE7B7;
-    margin-bottom: 40px;
-   
+    @media screen and (max-width: 790px){
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 448px){
+      font-size: 2rem;
+    }
 `
 
 export const ConhecimentosDesc = styled.p`
@@ -64,6 +72,7 @@ export const BackgroundGradient = styled.div`
      overflow: hidden;
      flex: 1 1 200px;
      transition: all 0.2s ease;
+     
      &:hover{
        transform: scale(1.1);
        transition: all 0.2s ease;

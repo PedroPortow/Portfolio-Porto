@@ -4,9 +4,10 @@ import Animation2 from './Animations/Animation2'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export const Container = styled.div`
-  padding: 40px 0;
+  padding: 40px 10px;
   height: 100vh;
   background-color: #11172B;
+  width: 100%;
 `
 
 export const Wrapper = styled.div`
@@ -52,6 +53,8 @@ export const SobreRight = styled.div`
     align-items: center;
     position: relative;
     flex: 1 1 420px;
+    width: 100%;
+
 
    
     `
@@ -59,14 +62,17 @@ export const SobreRight = styled.div`
     font-size: 3rem;
     text-shadow: -4px 5px 22px #11172b ;
     color: #0EE7B7;
+    
   `
   export const SobreP = styled.p`
     font-size: 1.5rem;
     color: white;
     font-weight: 300;
     text-shadow: -4px 5px 22px #11172b ;
-    width: 35rem;
+    
     text-align: justify;
+
+
   `
 export const TextWrapper = styled.div`
   position: absolute;
@@ -77,6 +83,7 @@ export const TextWrapper = styled.div`
   z-index: 4;
   transition: 0.5s ease;
   /* border: 1px solid red; */
+  width: 100%;
 
   ${WrappDivs}:hover &{
     left: -95px;
@@ -86,7 +93,7 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 926px){
         position: static;
     }
-
+  
   
 `
 

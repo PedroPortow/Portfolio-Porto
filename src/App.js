@@ -4,16 +4,29 @@ import Conhecimentos from './components/Conhecimentos';
 import Header from './components/Header';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import Sidebar from './components/Sidebar';
 import Sobre from './components/Sobre';
+import {useState} from 'react';
+import Contact from './components/Contact';
 
 function App() {
+  const [ isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+
+
   return (
     <>
-      <Header />
+      <Header toggle={toggle}/>
+      <Sidebar  isOpen={isOpen} toggle={toggle}/>
       <Home/>
       <Sobre />
       <Projects />
       <Conhecimentos />
+      <Contact />
     </>
   );
 }
