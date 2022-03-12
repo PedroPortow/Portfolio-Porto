@@ -20,8 +20,8 @@ function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="projetos" onClick={toggle}>
                     Projetos
                 </SidebarLink>
-                <SidebarLink to="conhecimentos" onClick={toggle}>
-                    Conhecimentos
+                <SidebarLink to="habilidades" onClick={toggle}>
+                    Habilidades
                 </SidebarLink>
                 <SidebarLink to="contato" onClick={toggle}>
                     Contato

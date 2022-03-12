@@ -169,6 +169,7 @@ export const Rectangle = styled.div`
 `
 
 
+
 function Home(props) {
 
   useEffect(() => {
@@ -177,15 +178,22 @@ function Home(props) {
   
 
   return (
-    <Container>
+    <Container id="home">
               <LeftIconsWrapper>
-                <GitHubIcon style={{color: ' #0EE7B7'}} />
-                <LinkedInIcon style={{color: ' #0EE7B7'}} />
-            
+                <a href="https://github.com/PedroPortow" target='_blank'>
+                  <GitHubIcon style={{color: ' #0EE7B7'}} />
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-lu%C3%ADs-rodrigues-porto-35912022a/" target='_blank'>
+                  <LinkedInIcon style={{color: ' #0EE7B7'}} />
+                </a>
               </LeftIconsWrapper>
               <RightIconsWrapper>
+              <a href="https://www.instagram.com/pedro.portow/" target='_blank'>
                 <InstagramIcon style={{color: ' #0EE7B7'}} />
+              </a>
+              <a href="https://twitter.com/pedroportow" target='_blank'>
                 <TwitterIcon style={{color: ' #0EE7B7'}} />
+              </a>
               </RightIconsWrapper>
               <Hr2 left/>
               <Hr2 right/>

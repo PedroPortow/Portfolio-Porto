@@ -187,8 +187,8 @@ function Project({ item }) {
                <ProjectDesc>{item.desc}</ProjectDesc>
            </TextWrapper>
        </section>
-       <Button>
-           <A href='#' className='a'>Projeto {<ArrowCircleRightOutlinedIcon />}</A>
+       <Button data-aos="fade-right">
+           <A href={item.link} target="_blank" className='a'>Projeto {<ArrowCircleRightOutlinedIcon />}</A>
        </Button>
     </ProjectsWrapper>
   )

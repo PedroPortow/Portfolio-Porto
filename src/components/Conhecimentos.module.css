@@ -4,9 +4,18 @@
     z-index: 4;
 }
 
+
 .icon2{
-    color: white;
-    font-size: 9rem;
+    color: #7AC7E3;
+    transition: 0.2s ease;
     cursor: pointer;
-   
+
+
+}
+
+.icon2:hover{
+    transform:scale(1.1);
+    transition: 0.2s ease;
+    color: #0EE7B7;
+    
 }

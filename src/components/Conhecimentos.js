@@ -71,27 +71,22 @@ export const BackgroundGradient = styled.div`
      padding: 1px;
      overflow: hidden;
      flex: 1 1 200px;
-     transition: all 0.2s ease;
+    transition: all 1s ease;
      
-     &:hover{
-       transform: scale(1.1);
-       transition: all 0.2s ease;
-
-     }
-
 `
 export const TextIcons = styled.h3`
   color: #7AC7E3;
 text-align:center ;
+
 `
 
 function Conhecimentos(props) {
 
 
   return (
-    <Container>
+    <Container id='habilidades'>
         <Wrapper>
-        <ConhecimentosTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Conhecimentos</ConhecimentosTitle>
+        <ConhecimentosTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Habilidades</ConhecimentosTitle>
 
           <IconsWrapper >
            

@@ -65,7 +65,7 @@ export const SobreRight = styled.div`
     
   `
   export const SobreP = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     font-weight: 300;
     text-shadow: -4px 5px 22px #11172b ;
@@ -112,7 +112,7 @@ export const Rectangle = styled.div`
 
 function Sobre() {
   return (
-    <Container>
+    <Container id='sobre'>
         <Wrapper>
         <ProjectsTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Sobre</ProjectsTitle>
             <WrappDivs>
@@ -122,9 +122,8 @@ function Sobre() {
                 </SobreLeft>
                 <SobreRight>
                   <TextWrapper>
-                    <SobreH1 data-aos="fade-down">Quem sou?</SobreH1>
-                    <SobreP data-aos="fade-down">Estou cursando Ciência da Computação na UFPEL. No fim de 2021 tive meu primeiro
-                      contato com Desenvolvimento Web e, desde então, é o que estou estudando</SobreP>
+                    <SobreH1 data-aos="fade-right">Quem sou?</SobreH1>
+                    <SobreP data-aos="fade-right">Meu nome é Pedro Porto, tenho 18 anos e estou cursando Ciência da Computação na UFPEL. Estudo desenvolvimento Front-end e desenvolvo aplicações modernas focadas na experiência do usuário </SobreP>
                   </TextWrapper>
                 </SobreRight>
             </WrappDivs>

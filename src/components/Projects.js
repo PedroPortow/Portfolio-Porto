@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Project from './Project'
 import { Data } from './DataProjects'
-import { darken } from 'polished'
+import classes from './CssButton.module.css'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 export const Container = styled.div`
-  padding: 40px 0;
-  height: 200vh;
+  padding: 90px 0;
+  height: fit-content;
   background-color: #11172B;
   width: 100%;
   overflow: hidden;
@@ -31,39 +31,30 @@ export const ProjectsTitle = styled.h1`
 `
 
 export const WrapperButton = styled.button`
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #00B88B;
+  background-color: none;
 
-    &:hover{
-      background-color:#0EE7B7 ;
-      transition: all 600ms ease;
-    }
-  
-
-    a{
-      color: #fff;
-      font-size: 1.5rem;
-      width: 100%;
-      height: 100%;
-    }
 
 `
 
 function Projects() {
   return (
-    <Container>
+    <Container id='projetos'>
         <Wrapper>
-        <ProjectsTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Ultimos Projetos</ProjectsTitle>
-                {Data.map(item =>  (
-                <Project item={item} key={item.id} />
-                ))} 
-              
-        <WrapperButton>
-          <a href="#">VER TODOS MEUS PROJETOS</a>
-        </WrapperButton>      
+          <ProjectsTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Ultimos Projetos</ProjectsTitle>
+                  {Data.map(item =>  (
+                  <Project item={item} key={item.id} />
+                  ))} 
+       
+            <a href="https://github.com/PedroPortow" target="_blank"   style={{margin: '0 auto'}} data-aos="fade-up">
+            <button className={classes.cta}>
+                <span>Ver meus repositórios</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </a>
+          
         </Wrapper>
        
     </Container> 

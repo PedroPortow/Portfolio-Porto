@@ -171,12 +171,12 @@ function Navbar({ toggle }) {
                         offset={-120}>Projetos</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="conhecimentos" 
+                        <NavLinks to="habilidades" 
                         smooth={true}
                         duration={500}
                         spy={true}
                         exact='true'
-                        offset={-80}>Conhecimentos</NavLinks>
+                        offset={-80}>Habilidades</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="contato" 
@@ -184,7 +184,7 @@ function Navbar({ toggle }) {
                         duration={500}
                         spy={true}
                         exact='true'
-                        offset={-200}>Contato</NavLinks>
+                        offset={-550}>Contato</NavLinks>
                     </NavItem>
                 </NavMenu>
                
