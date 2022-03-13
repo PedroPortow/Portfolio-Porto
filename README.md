@@ -3,8 +3,10 @@
 
 
 ## Portfolio
-Site pessoal feito como portfolio
-<br><br>
+Site pessoal feito para eu usar como portfolio :)
+<br>
+Totalmente resposivo
+<br>
 Deploy na Vercel: https://pedroportow.vercel.app/
 
 ## Tecnologias
