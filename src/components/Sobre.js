@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   padding: 0px 10px;
   flex-direction: column;
   height: 90vh;
-  border-bottom: 2px solid #0eebf7;
+  border-bottom: 2px solid #0EE7B7;
 `
 
 export const WrappDivs = styled.div`

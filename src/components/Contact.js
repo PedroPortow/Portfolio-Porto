@@ -12,10 +12,12 @@ import classes2 from './CssButton.module.css'
 
 export const Container = styled.div`
   padding: 40px 10px;
+    min-height: 50vh;
     height: fit-content;
   background-color: #11172B;
   /* border: 4px solid green; */
   width: 100%;
+  border-bottom: 2px solid #0EE7B7 ;
 `
 
 export const Wrapper = styled.div`
@@ -24,8 +26,9 @@ export const Wrapper = styled.div`
   max-width: 1200px;
   flex-wrap: wrap ;
   margin: 0 auto;
-  padding: 0px 10px;
-  flex-direction: column;    
+  padding: 10px 10px;
+  flex-direction: column;
+ 
 `
 
 export const ConhecimentosTitle = styled.h1`
@@ -104,7 +107,7 @@ function Contact() {
   return (
     <Container id='contato'>
         <Wrapper>
-            <ConhecimentosTitle data-aos="fade-right">{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Contato</ConhecimentosTitle>
+            <ConhecimentosTitle data-aos="fade-right" >{<ArrowForwardIcon style={{fontSize: '40px', marginRight:'10px'}} />}Contato</ConhecimentosTitle>
             <IconsWrapper>
                 {modalIsShown && <Mailer onCloseModal={hideModalHandler} hideModalHandler={hideModalHandler} />}
               <a href="https://github.com/PedroPortow" target='_blank'>
