@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import Sobre from './components/Sobre';
 import {useState} from 'react';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Projects />
       <Conhecimentos />
       <Contact />
+      <Footer />
     </>
   );
 }

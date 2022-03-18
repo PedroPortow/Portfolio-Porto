@@ -12,12 +12,10 @@ import classes2 from './CssButton.module.css'
 
 export const Container = styled.div`
   padding: 40px 10px;
-    min-height: 50vh;
-    height: fit-content;
   background-color: #11172B;
   /* border: 4px solid green; */
   width: 100%;
-  border-bottom: 2px solid #0EE7B7 ;
+  
 `
 
 export const Wrapper = styled.div`
@@ -26,9 +24,12 @@ export const Wrapper = styled.div`
   max-width: 1200px;
   flex-wrap: wrap ;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 150px 10px;
   flex-direction: column;
- 
+  
+
+
+  
 `
 
 export const ConhecimentosTitle = styled.h1`
@@ -48,18 +49,12 @@ export const ConhecimentosTitle = styled.h1`
 
 export const IconsWrapper = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    /* border: 1px solid pink; */
-  
+    flex-wrap: wrap;    
    justify-content: center;
     align-items: center;
     height: fit-content;
     width: 100%;
-    
-
     margin-bottom: 50px;
-   
 `
 
 export const Button = styled.a`

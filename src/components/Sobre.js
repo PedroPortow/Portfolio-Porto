@@ -69,7 +69,7 @@ export const SobreRight = styled.div`
     color: white;
     font-weight: 300;
     text-shadow: -4px 5px 22px #11172b ;
-    
+    line-height: 2rem;
     text-align: justify;
 
 

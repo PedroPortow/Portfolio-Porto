@@ -184,7 +184,7 @@ function Navbar({ toggle }) {
                         duration={500}
                         spy={true}
                         exact='true'
-                        offset={-550}>Contato</NavLinks>
+                        offset={-80}>Contato</NavLinks>
                     </NavItem>
                 </NavMenu>
                

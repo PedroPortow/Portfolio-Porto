@@ -10,7 +10,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export const Container = styled.div`
   padding: 40px 10px;
-
   background-color: #11172B;
   /* border: 4px solid green; */
   width: 100%;
