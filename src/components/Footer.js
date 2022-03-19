@@ -40,9 +40,11 @@ export const RightContainer = styled.div`
     /* border: 1px solid white; */
     height: 100%;
     width: 100%;
+    text-align: end;
 
     @media screen and (max-width: 639px){
       margin-top: 20px;
+      text-align: start;
     }
 `
 
@@ -52,6 +54,10 @@ export const Title = styled(Link)`
   font-size: 1rem;
   font-weight: 500;
   opacity: 0.5;
+
+  &:hover{
+    opacity: 1;
+  }
 `
 
 export const Desc = styled.p`
@@ -67,6 +73,11 @@ export const LinkS = styled(Link)`
   font-weight: 300;
   opacity: 0.5;
   cursor: pointer;
+    transition: 0.5s;
+
+  &:hover{
+    opacity: 1;
+  }
   
 `
 
@@ -81,8 +92,12 @@ export const SocialMediaWrapper = styled.div`
 export const CopyrightWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 25px;
+  /* border: 1px solid red; */
 `
 
 export const CopyTitle = styled.p`
@@ -96,10 +111,8 @@ function Footer() {
     <Container>
         <Wrapper>
             <LeftContainer>
-                <Title start>Venha melhorar sua marca!</Title>
-                <Desc>A expansão dos seus limites
-                e o alcance de um novo público
-                esta aqui!</Desc>
+                <Title start>Entre em contato e venha dar uma nova cara à sua marca!</Title>
+                <Desc>Uma identidade visual é fundamental para expandir seu negócio</Desc>
                 <SocialMediaWrapper>
                   <a href="https://github.com/PedroPortow" target='_blank'>
                     <GitHubIcon sx={{fontSize: 25, color: '#fff', opacity: '0.5'}} />

@@ -64,6 +64,7 @@ export const TextWrapper = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 10px;
   
   @media screen and (max-width: 1000px) {
     position: absolute;

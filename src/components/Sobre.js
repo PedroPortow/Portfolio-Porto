@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Animation2 from './Animations/Animation2'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import classes from './CssButton.module.css'
 
 export const Container = styled.div`
   padding: 40px 10px;
@@ -71,6 +72,7 @@ export const SobreRight = styled.div`
     text-shadow: -4px 5px 22px #11172b ;
     line-height: 2rem;
     text-align: justify;
+    margin-bottom: 20px;
 
 
   `
@@ -107,7 +109,15 @@ export const Rectangle = styled.div`
      z-index: 1;
      border-radius: 50%;
 `
-
+export const Button = styled.button`
+  width: 40%;
+  padding: 1rem;
+  border-radius: 15px;
+  border: white 1px solid;
+  background-color: #0EE7B7;
+  color: white;
+  font-size: 1rem;
+` 
 
 
 function Sobre() {
@@ -124,6 +134,17 @@ function Sobre() {
                   <TextWrapper>
                     <SobreH1 data-aos="fade-right">Quem sou?</SobreH1>
                     <SobreP data-aos="fade-right">Meu nome é Pedro Porto, tenho 18 anos e estou cursando Ciência da Computação na UFPEL. Estudo desenvolvimento Front-end e desenvolvo aplicações modernas focadas na experiência do usuário </SobreP>
+                    <a href='https://drive.google.com/file/d/1Vkm_DOSTaKWTmzaWIzaeIaN3UbgCHf_N/view?usp=sharing' target='_blank' data-aos="fade-right" >
+                      <button className={classes.cta}>
+                        <span>Curriculum Vitae</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                    </a>
+                   
+                   
                   </TextWrapper>
                 </SobreRight>
             </WrappDivs>
